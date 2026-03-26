@@ -36,7 +36,7 @@ export default function VirtualList<T>({ items, renderRow }: Props<T>) {
 
   const visibleItems = items.slice(startIndex, endIndex + 1);
   const paddingTop = startIndex * ROW_HEIGHT;
-  const paddingBottom = (items.length - 1 - endIndex) * ROW_HEIGHT;
+  // const paddingBottom = (items.length - 1 - endIndex) * ROW_HEIGHT;
 
   return (
     <div

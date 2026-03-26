@@ -41,7 +41,7 @@ export function useDragAndDrop() {
   }, []);
 
   const onDragEnd = useCallback(
-    (e: React.DragEvent, taskId: string) => {
+    (_e: React.DragEvent, taskId: string) => {
       // Remove ghost
       ghostEl.current?.remove();
       ghostEl.current = null;
